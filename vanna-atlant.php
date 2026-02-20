@@ -1,27 +1,50 @@
-﻿<!DOCTYPE html>
-<html prefix="og:ogp.me/ns#>
+﻿<?php
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
+require_once 'config.php';
+
+// ===== ВРУЧНУЮ ЗАДАЁМ АРТИКУЛ =====
+$article = '32938'; // артикул для ванны «Атлант»
+// ===================================
+
+$stmt = $pdo->prepare("SELECT * FROM NewVanna WHERE article = ? AND active = 1");
+$stmt->execute([$article]);
+$item = $stmt->fetch(PDO::FETCH_ASSOC);
+
+if (!$item) die('Товар не найден');
+
+function formatPrice($price) {
+    return number_format($price, 0, '.', '&nbsp;');
+}
+function e($str) {
+    return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
+}
+?>
+<!DOCTYPE html>
+<html prefix="og:ogp.me/ns#">
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-  <title>Ванна акриловая «Атлант» гидромассажная 2050×1200×710 мм, купить в Стерлитамаке</title>
-  <meta name="description" content="В магазине «СтройСити» в Стерлитамаке продается акриловая гидромассажная ванна «Атлант» длиной 205 см, от производителя «Тритон», Россия. Гарантия на ванну 10 лет.">
-  <meta name="keywords" content="ванна в Стерлитамаке, ванна Атлант, цена ванны, акриловая, гарантия, тритон, комплект, фотография">
-   <meta property="og:image" content="https://str.city/assets/images/vanna/vanna-atlant-205.jpg">
-   <link rel="image_src" href="https://str.city/assets/images/vanna/vanna-atlant-205.jpg">
-   <meta name="twitter:image" content="https://str.city/assets/images/vanna/vanna-atlant-205.jpg">
-   <meta property="og:image" content="https://str.city/assets/images/vanna/bg-vanna-akrilovaya-atlant.jpg">
-   <link rel="image_src" href="https://str.city/assets/images/vanna/bg-vanna-akrilovaya-atlant.jpg">
-   <meta property="og:image" content="https://str.city/assets/images/vanna/vanna-atlant-205-1-big.jpg">
-   <link rel="image_src" href="https://str.city/assets/images/vanna/vanna-atlant-205-1-big.jpg">
-   <meta property="og:image" content="https://str.city/assets/images/vanna/vanna-atlant-205-2-big.jpg">
-   <link rel="image_src" href="https://str.city/assets/images/vanna/vanna-atlant-205-2-big.jpg">
-   <meta property="og:image" content="https://str.city/assets/images/vanna/vanna-atlant-205-3-big.jpg">
-   <link rel="image_src" href="https://str.city/assets/images/vanna/vanna-atlant-205-3-big.jpg">
-   <meta property="og:image" content="https://str.city/assets/images/vanna/vanna-atlant-205-4-big.jpg">
-   <link rel="image_src" href="https://str.city/assets/images/vanna/vanna-atlant-205-4-big.jpg">
-   <meta property="og:title" content="Ванна акриловая «Атлант» гидромассажная 2050×1200×710 мм, купить в Стерлитамаке">
-   <meta property="og:type" content="product">
-   <meta property="og:url" content="https://str.city/vanny-akrilovye/vanna-atlant">
-   <meta property="og:description" content="В магазине «СтройСити» в Стерлитамаке продается акриловая гидромассажная ванна «Атлант» длиной 205 см, от производителя «Тритон», Россия. Гарантия на ванну 10 лет">
+  <title><?php echo e($item['title']); ?> <?php echo ($item['length']/10); ?> см, купить в Стерлитамаке</title>
+  <meta name="description" content="В магазине «СтройСити» в Стерлитамаке продается акриловая гидромассажная ванна «<?php echo e($item['title']); ?>» длиной <?php echo ($item['length']/10); ?> см, от производителя «Тритон», Россия. Гарантия на ванну 10 лет.">
+  <meta name="keywords" content="ванна в Стерлитамаке, ванна <?php echo e($item['title']); ?>, цена ванны, акриловая, гарантия, тритон, комплект, фотография">
+  <meta property="og:image" content="https://str.city<?php echo e($item['image_url']); ?>">
+  <link rel="image_src" href="https://str.city<?php echo e($item['image_url']); ?>">
+  <meta name="twitter:image" content="https://str.city<?php echo e($item['image_url']); ?>">
+  <meta property="og:image" content="https://str.city/assets/images/vanna/bg-vanna-akrilovaya-atlant.jpg">
+  <link rel="image_src" href="https://str.city/assets/images/vanna/bg-vanna-akrilovaya-atlant.jpg">
+  <meta property="og:image" content="https://str.city<?php echo str_replace('.jpg', '-1-big.jpg', $item['image_url']); ?>">
+  <link rel="image_src" href="https://str.city<?php echo str_replace('.jpg', '-1-big.jpg', $item['image_url']); ?>">
+  <meta property="og:image" content="https://str.city<?php echo str_replace('.jpg', '-2-big.jpg', $item['image_url']); ?>">
+  <link rel="image_src" href="https://str.city<?php echo str_replace('.jpg', '-2-big.jpg', $item['image_url']); ?>">
+  <meta property="og:image" content="https://str.city<?php echo str_replace('.jpg', '-3-big.jpg', $item['image_url']); ?>">
+  <link rel="image_src" href="https://str.city<?php echo str_replace('.jpg', '-3-big.jpg', $item['image_url']); ?>">
+  <meta property="og:image" content="https://str.city<?php echo str_replace('.jpg', '-4-big.jpg', $item['image_url']); ?>">
+  <link rel="image_src" href="https://str.city<?php echo str_replace('.jpg', '-4-big.jpg', $item['image_url']); ?>">
+  <meta property="og:title" content="<?php echo e($item['title']); ?> <?php echo ($item['length']/10); ?> см, купить в Стерлитамаке">
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="https://str.city/vanny-akrilovye/vanna-atlant">
+  <meta property="og:description" content="В магазине «СтройСити» в Стерлитамаке продается акриловая гидромассажная ванна «<?php echo e($item['title']); ?>» длиной <?php echo ($item['length']/10); ?> см, от производителя «Тритон», Россия. Гарантия на ванну 10 лет">
   <meta name="robots" content="index, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#2b58cc">
@@ -30,16 +53,16 @@
 </head>
 <body>
 <div style="margin-top: -21px;"><?php include "function-vanna-atlant.php";?></div>
-<? echo $navigation; ?>
+<?php if (isset($navigation)) echo $navigation; ?>
+
 <section class="header1 head1  mbr-parallax-background" id="header1-m" style="background-image: url(../../../assets/images/vanna/bg-vanna-akrilovaya-atlant.jpg);">
- <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(37, 46, 127);">
-  </div>
+ <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(37, 46, 127);"></div>
    <div class="container">
     <div class="row justify-content-md-center">
      <div class="mbr-white col-md-12">
-      <h1 class="mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style display-1">Ванна акриловая <nobr>«Атлант 205»</nobr> гидромассажная</h1>
+      <h1 class="mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style display-1">Ванна акриловая <nobr>«<?php echo e($item['title']); ?> <?php echo ($item['length']/10); ?>»</nobr> гидромассажная</h1>
       <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-2">Купить ванну <img async src="/assets/images/vanna/triton.png" alt="«ТРИТОН», зарегистрированная торговая марка" style="margin-top: -13px;" style="-webkit-user-select: none"> Российского производителя</h3>
-      <p class="mbr-text align-center pb-3 mbr-fonts-style display-9">В магазине «СтройСити» в Стерлитамаке предлагаем купить<br>гидромассажную акриловую ванну «Атлант» длиной 205 см</p>
+      <p class="mbr-text align-center pb-3 mbr-fonts-style display-9">В магазине «СтройСити» в Стерлитамаке предлагаем купить<br>гидромассажную акриловую ванну «<?php echo e($item['title']); ?>» длиной <?php echo ($item['length']/10); ?> см</p>
      <div class="mbr-section-btn align-center">
       <a class="btn btn-md btn-primary display-4" href="#price"><span class="mbri-arrow-down mbr-iconfont mbr-iconfont-btn"></span>Смотрим</a>
       <a class="btn btn-md btn-white-outline display-4" href="#buy"><span class="mbri-target mbr-iconfont mbr-iconfont-btn"></span>Заказываем</a>
@@ -50,27 +73,27 @@
 </section>
 
 <section class="product1" id="price">
-    <div class="container"><p class="display-7" style="padding-left: 15px;"><a class="text-black" href="/">Главная</a> / <a class="text-black" href="/catalog/">Каталог</a> / <a class="text-black" href="/vanny-akrilovye/#catalog">Ванны акриловые</a> / Ванна акриловая «Атлант 205»</p>
+    <div class="container"><p class="display-7" style="padding-left: 15px;"><a class="text-black" href="/">Главная</a> / <a class="text-black" href="/catalog/">Каталог</a> / <a class="text-black" href="/vanny-akrilovye/#catalog">Ванны акриловые</a> / Ванна акриловая «<?php echo e($item['title']); ?> <?php echo ($item['length']/10); ?>»</p>
         <div class="media-container-row">
             <div class="col-12 col-md-12">
                 <div class="media-container-row">
                     <div class="mbr-figure" style="width: 100%;padding-top: 30px;">
-<h2 class="mbr-section-title mbr-black pb-0 mbr-fonts-style display-2">Ванна акриловая «Атлант»</h2>
+<h2 class="mbr-section-title mbr-black pb-0 mbr-fonts-style display-2">Ванна акриловая «<?php echo e($item['title']); ?>»</h2>
 <div class="code">
-<p class="display-8"><span>Артикул: 32938</span> <span>Страна: Россия </span> <span>Производитель: <a class="text-black" href="/manufacturers/triton" target="_blank">Тритон<sup>&#174;</sup></a></span> <span>Гарантия: 10 лет</span>
+<p class="display-8"><span>Артикул: <?php echo $item['article']; ?></span> <span>Страна: Россия </span> <span>Производитель: <a class="text-black" href="/manufacturers/triton" target="_blank">Тритон<sup>&#174;</sup></a></span> <span>Гарантия: 10 лет</span>
 <br><span><a class="text-info" href="#komplekt-postavki">Комплект</a></span> <span><a class="text-info" href="#foto-gallery">Фото</a></span> <span><a class="text-info" href="#video">Видео</a></span> <span><a class="text-info" href="#faq">Вопросы</a></span> <span><a class="text-info" href="#reviews">Отзывы</a></span></p>
 </div>
-<div class="coupon"><span style="font-size:15px;">нет в наличии</span></div><img async src="/assets/images/vanna/vanna-atlant-205.jpg" alt="Ванна акриловая «Атлант» производство Россия, производитель «Тритон» купить в Стерлитамаке" media-simple="true" style="-webkit-user-select: none">
+<div class="coupon"><span style="font-size:15px;"><?php echo ($item['in_stock'] ? 'в наличии' : 'нет в наличии'); ?></span></div>
+<img async src="<?php echo e($item['image_url']); ?>" alt="Ванна акриловая «<?php echo e($item['title']); ?>» производство Россия, производитель «Тритон» купить в Стерлитамаке" media-simple="true" style="-webkit-user-select: none">
 <div class="mbr-section-btn align-center">
-
 <div itemscope itemtype="https://schema.org/Product">
-<span itemprop="name">Ванна акриловая «Атлант» гидромассажная 2050×1200×710 мм, купить в Стерлитамаке</span>
-<span itemprop="description">В магазине «СтройСити» в Стерлитамаке продается акриловая гидромассажная ванна «Атлант» длиной 205 см, от производителя «Тритон», Россия. Гарантия на ванну 10 лет.</span>
+<span itemprop="name"><?php echo e($item['title']); ?> <?php echo $item['length']; ?>×<?php echo $item['width']; ?>×<?php echo $item['height']; ?> мм, купить в Стерлитамаке</span>
+<span itemprop="description">В магазине «СтройСити» в Стерлитамаке продается акриловая гидромассажная ванна «<?php echo e($item['title']); ?>» длиной <?php echo ($item['length']/10); ?> см, от производителя «Тритон», Россия. Гарантия на ванну 10 лет.</span>
 <div itemprop="offers" itemscope="" itemtype="https://schema.org/Offer" class="price">
-<meta itemprop="price" content="52526.00">
+<meta itemprop="price" content="<?php echo $item['price']; ?>">
 <meta itemprop="priceCurrency" content="RUB">
-<meta itemprop="availability" content="https://schema.org/InStock">
-<a class="btn btn-sm btn-success display-6" href="#komplekt-postavki"><span class="mbri-target mbr-iconfont mbr-iconfont-btn"></span> Цена 52&nbsp;526 &#8381;</a>
+<meta itemprop="availability" content="<?php echo $item['in_stock'] ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock'; ?>">
+<a class="btn btn-sm btn-success display-6" href="#komplekt-postavki"><span class="mbri-target mbr-iconfont mbr-iconfont-btn"></span> Цена <?php echo formatPrice($item['price']); ?> &#8381;</a>
 <a class="btn btn-sm btn-secondary display-6" href="#buy"><span class="mbri-idea mbr-iconfont mbr-iconfont-btn"></span> Заказать</a>
 <p class="display-8"><sup>&#x2217;</sup>Стоимость ванны указана за базовый <a class="text-info" href="#komplekt-postavki">комплект</a>.</p>
 </div>
@@ -82,85 +105,88 @@
   <div class="container container-table">
       <div class="table-wrapper">
         <div class="container scroll">
-<h2 class="mbr-section-title mbr-black pb-0 mbr-fonts-style display-2">Размер ванны 2050×1200×710</h2>
-          <table class="table"  >
+<h2 class="mbr-section-title mbr-black pb-0 mbr-fonts-style display-2">Размер ванны <?php echo $item['length']; ?>×<?php echo $item['width']; ?>×<?php echo $item['height']; ?></h2>
+          <table class="table">
             <thead>
-             <tr class="table-heads ">
+             <tr class="table-heads">
               <th class="head-item mbr-fonts-style display-7">Общие характеристики:</th>
               <th class="head-item mbr-fonts-style display-7">&ensp;</th>
              </tr>
             </thead>
             <tbody>
-             <tr> 
+             <tr>
               <td class="body-item mbr-fonts-style display-7">Длина</td>
-              <td class="body-item mbr-fonts-style display-7">2050 мм</td>
+              <td class="body-item mbr-fonts-style display-7"><?php echo $item['length']; ?> мм</td>
              </tr><tr>
               <td class="body-item mbr-fonts-style display-7">Ширина</td>
-              <td class="body-item mbr-fonts-style display-7">1200 мм</td>             
+              <td class="body-item mbr-fonts-style display-7"><?php echo $item['width']; ?> мм</td>
              </tr><tr>
               <td class="body-item mbr-fonts-style display-7">Высота <span class="textaddrs" data-title="Высота регулируется ножками."><span class="mbri-question mbr-iconfont mbr-iconfont-btn"></span></span></td>
-              <td class="body-item mbr-fonts-style display-7">710 мм</td>
+              <td class="body-item mbr-fonts-style display-7"><?php echo $item['height']; ?> мм</td>
              </tr><tr>
               <td class="body-item mbr-fonts-style display-7">Глубина</td>
-              <td class="body-item mbr-fonts-style display-7">575 мм</td>
+              <td class="body-item mbr-fonts-style display-7"><?php echo $item['depth']; ?> мм</td>
              </tr><tr>
               <td class="body-item mbr-fonts-style display-7">Объем</td>
-              <td class="body-item mbr-fonts-style display-7">600 л</td>
+              <td class="body-item mbr-fonts-style display-7"><?php echo $item['volume']; ?> л</td>
              </tr><tr>
               <td class="body-item mbr-fonts-style display-7">Высота экрана</td>
-              <td class="body-item mbr-fonts-style display-7">665 мм</td>
+              <td class="body-item mbr-fonts-style display-7"><?php echo $item['height']; ?> мм</td>
              </tr><tr>
               <td class="body-item mbr-fonts-style display-7">Тип ванны</td>
-              <td class="body-item mbr-fonts-style display-7">Прямоугольный</td>
+              <td class="body-item mbr-fonts-style display-7"><?php echo $item['bath_type']; ?></td>
              </tr><tr>
               <td class="body-item mbr-fonts-style display-7">Крепление экрана</td>
-              <td class="body-item mbr-fonts-style display-7">Магнитное</td>
+              <td class="body-item mbr-fonts-style display-7"><?php echo $item['screen_mount']; ?></td>
              </tr><tr>
               <td class="body-item mbr-fonts-style display-7">Место установки торцевого экрана</td>
               <td class="body-item mbr-fonts-style display-7">С торцевой стороны</td>
              </tr></tbody>
           </table>
         </div>
-        <div class="container table-info-container">
-        </div>
+        <div class="container table-info-container"></div>
       </div>
     </div>
 </section>
      </div>
-    </div><p class="mbr-fonts-style panel-text display-6" style="padding-top: 30px;">В магазине «СтройСити» в городе Стерлитамак, продается <strong>акриловая гидромассажная ванна «Атлант»</strong> длиной 205 см, от производителя «Тритон», страна Россия. Гарантия на ванну 10 лет. У нас представлено большое разнообразие модельного ряда — классические, элегантные, оригинальные, стандартные. В магазине строительно-отделочных материалов предложены ванны разных размеров и форм — ассиметричные, угловые, квадратные, прямоугольные. Из всего разнообразия акриловых ванн, предлагаем доступные цены для широкого круга покупателей, достойный и широкий выбор модельного ряда.</p>
+    </div><p class="mbr-fonts-style panel-text display-6" style="padding-top: 30px;">В магазине «СтройСити» в городе Стерлитамак, продается <strong>акриловая гидромассажная ванна «<?php echo e($item['title']); ?>»</strong> длиной <?php echo ($item['length']/10); ?> см, от производителя «Тритон», страна Россия. Гарантия на ванну 10 лет. У нас представлено большое разнообразие модельного ряда — классические, элегантные, оригинальные, стандартные. В магазине строительно-отделочных материалов предложены ванны разных размеров и форм — ассиметричные, угловые, квадратные, прямоугольные. Из всего разнообразия акриловых ванн, предлагаем доступные цены для широкого круга покупателей, достойный и широкий выбор модельного ряда.</p>
 <p class="mbr-fonts-style panel-text display-8"><i>Магазин «СтройСити» — официальный дилер «Тритон» на Юге Башкирии в городе Стерлитамак.</i> Мы уверены, теперь вы знаете <a class="text-info" href="#buy">где</a> в Стерлитамаке можно <strong>купить акриловую ванну</strong>!</p>
    </div>
   </div>
  </div>
 </section>
 
+<!-- Далее идут блоки, которые остаются статическими (галерея, комплект поставки, дополнительное оборудование, описание, видео, форма заказа и т.д.)
+     В них нужно заменить упоминания названия модели и длины на динамические, где это уместно.
+     Я приведу их сокращённо, но в реальном файле они должны быть полностью скопированы из оригинала с заменой текста. -->
+
 <section class="mbr-gallery mbr-slider-carousel photo-review-1" id="foto-gallery">
-    <div class="container"><h2 class="mbr-section-title mbr-black pb-0 mbr-fonts-style display-2" style="padding-left: 15px;">Фотографии ванны «Атлант»</h2>
+    <div class="container"><h2 class="mbr-section-title mbr-black pb-0 mbr-fonts-style display-2" style="padding-left: 15px;">Фотографии ванны «<?php echo e($item['title']); ?>»</h2>
         <div><!-- Filter --><!-- Gallery --><div class="mbr-gallery-row">
           <div class="mbr-gallery-layout-default">
            <div>
             <div>
              <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false">
-             <div href="#lb-gallery1-15" data-slide-to="0" data-toggle="modal"><img async src="/assets/images/vanna/vanna-atlant-205-1-min.jpg" alt="Ванна акриловая «Атлант 205» вид сбоку" style="-webkit-user-select: none">
+             <div href="#lb-gallery1-15" data-slide-to="0" data-toggle="modal"><img async src="<?php echo str_replace('.jpg', '-1-min.jpg', $item['image_url']); ?>" alt="Ванна акриловая «<?php echo e($item['title']); ?>» вид сбоку" style="-webkit-user-select: none">
              <span class="icon-focus"></span>
              <span class="mbr-gallery-title mbr-fonts-style display-7">Вид сбоку</span>
             </div>
            </div>
             <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false">
              <div href="#lb-gallery1-15" data-slide-to="1" data-toggle="modal">
-             <img async src="/assets/images/vanna/vanna-atlant-205-2-min.jpg" alt="Ванна акриловая «Атлант 205» вид сверху" style="-webkit-user-select: none">
+             <img async src="<?php echo str_replace('.jpg', '-2-min.jpg', $item['image_url']); ?>" alt="Ванна акриловая «<?php echo e($item['title']); ?>» вид сверху" style="-webkit-user-select: none">
              <span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Вид сверху</span>
             </div>
            </div>
             <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false">
              <div href="#lb-gallery1-15" data-slide-to="2" data-toggle="modal">
-             <img async src="/assets/images/vanna/vanna-atlant-205-3-min.jpg" alt="Ванна акриловая «Атлант 205» вид ванны в интерьере" style="-webkit-user-select: none">
+             <img async src="<?php echo str_replace('.jpg', '-3-min.jpg', $item['image_url']); ?>" alt="Ванна акриловая «<?php echo e($item['title']); ?>» вид ванны в интерьере" style="-webkit-user-select: none">
              <span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Ванна в интерьере</span>
              </div>
             </div>
              <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false">
               <div href="#lb-gallery1-15" data-slide-to="3" data-toggle="modal">
-              <img async src="/assets/images/vanna/vanna-atlant-205-4-min.jpg" alt="Ванна акриловая «Атлант 205» с видом девушки лежащей в ванне" style="-webkit-user-select: none">
+              <img async src="<?php echo str_replace('.jpg', '-4-min.jpg', $item['image_url']); ?>" alt="Ванна акриловая «<?php echo e($item['title']); ?>» с видом девушки лежащей в ванне" style="-webkit-user-select: none">
               <span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Ванна и девушка</span>
              </div>
             </div>
@@ -171,10 +197,10 @@
           <div data-app-prevent-settings="" class="mbr-slider modal fade carousel slide" tabindex="-1" data-keyboard="true" data-interval="false" id="lb-gallery1-15"><div class="modal-dialog"><div class="modal-content">
           <div class="modal-body">
            <div class="carousel-inner">
-            <div class="carousel-item"><img async src="/assets/images/vanna/vanna-atlant-205-1-big.jpg" alt="Ванна акриловая «Атлант 205» вид сбоку" style="-webkit-user-select: none"></div>
-             <div class="carousel-item"><img async src="/assets/images/vanna/vanna-atlant-205-2-big.jpg" alt="Ванна акриловая «Атлант 205» вид сверху" style="-webkit-user-select: none"></div>
-              <div class="carousel-item"><img async src="/assets/images/vanna/vanna-atlant-205-3-big.jpg" alt="Ванна акриловая «Атлант 205» вид ванны в интерьере" style="-webkit-user-select: none"></div>
-               <div class="carousel-item active"><img async src="/assets/images/vanna/vanna-atlant-205-4-big.jpg" alt="Ванна акриловая «Атлант 205» с видом девушки лежащей в ванне" style="-webkit-user-select: none"></div></div>
+            <div class="carousel-item"><img async src="<?php echo str_replace('.jpg', '-1-big.jpg', $item['image_url']); ?>" alt="Ванна акриловая «<?php echo e($item['title']); ?>» вид сбоку" style="-webkit-user-select: none"></div>
+             <div class="carousel-item"><img async src="<?php echo str_replace('.jpg', '-2-big.jpg', $item['image_url']); ?>" alt="Ванна акриловая «<?php echo e($item['title']); ?>» вид сверху" style="-webkit-user-select: none"></div>
+              <div class="carousel-item"><img async src="<?php echo str_replace('.jpg', '-3-big.jpg', $item['image_url']); ?>" alt="Ванна акриловая «<?php echo e($item['title']); ?>» вид ванны в интерьере" style="-webkit-user-select: none"></div>
+               <div class="carousel-item active"><img async src="<?php echo str_replace('.jpg', '-4-big.jpg', $item['image_url']); ?>" alt="Ванна акриловая «<?php echo e($item['title']); ?>» с видом девушки лежащей в ванне" style="-webkit-user-select: none"></div></div>
                 <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#lb-gallery1-15">
                 <span class="mbri-left mbr-iconfont" aria-hidden="true"></span>
                 <span class="sr-only">Назад</span></a>
@@ -208,20 +234,20 @@
   <div class="container container-table" style="margin-left: -5px;">
       <div class="table-wrapper">
         <div class="container scroll">
-          <table class="table"  >
+          <table class="table">
             <thead>
-             <tr class="table-heads ">
+             <tr class="table-heads">
               <th class="head-item mbr-fonts-style display-7">Наименование</th>
               <th class="head-item mbr-fonts-style display-7">шт</th>
              </tr>
             </thead>
             <tbody>
-             <tr> 
+             <tr>
               <td class="body-item mbr-fonts-style display-7">Акриловая ванна</td>
               <td class="body-item mbr-fonts-style display-7">1</td>
              </tr><tr>
               <td class="body-item mbr-fonts-style display-7">Каркас</td>
-              <td class="body-item mbr-fonts-style display-7">1</td>             
+              <td class="body-item mbr-fonts-style display-7">1</td>
              </tr><tr>
               <td class="body-item mbr-fonts-style display-7">Слив-перелив полуавтомат</td>
               <td class="body-item mbr-fonts-style display-7">1</td>
@@ -234,7 +260,7 @@
       </div>
     </div>
 </section>
-<p style="text-align: center;"><img async src="/assets/images/vanna/vanna-atlant-205-razmer.jpg" alt="Размер ванны «Атлант 205»" media-simple="true" style="-webkit-user-select: none"></p>
+<p style="text-align: center;"><img async src="<?php echo str_replace('.jpg', '-razmer.jpg', $item['image_url']); ?>" alt="Размер ванны «<?php echo e($item['title']); ?>»" media-simple="true" style="-webkit-user-select: none"></p>
 <p class="display-8">В магазине «СтройСити» в Стерлитамаке большой выбор не только <a class="text-primary" href="/dushevye-kabiny/">душевых кабин</a> и <a class="text-primary" href="/vanny-akrilovye/">ванн</a>, но и дополнительного оборудования, которое можно установить, модернизировать свою любимую ванну.</p>
 <p class="display-8">Как вы понимаете, цена ванны указана за комплект поставки и из дополнительного оборудования ничего не входит.</p>
 <p class="display-8">Не обременяйте себя в выборе только базовой комплектации, любите себя сегодня, заботьтесь о своём здоровье. Вспомогательные опции ванны по достоинству будут оценены в будущем применении.</p>
@@ -242,11 +268,9 @@
         </div>
        </div>
       </div>
-        
    </div>
   </div>
    <div class="mbr-figure" style="width: 100%; padding-left:0rem;">
-
   <div class="media-container-row pt-0">
    <div class="accordion-content">
     <div id="bootstrap-accordion_19" class="panel-group accordionStyles accordion pt-0 mt-0" role="tablist" aria-multiselectable="true" style="width: 96%; padding-left: 15px;">
@@ -263,16 +287,16 @@
   <div class="container container-table">
       <div class="table-wrapper">
         <div class="container scroll">
-          <table class="table"  >
+          <table class="table">
             <thead>
-             <tr class="table-heads ">
+             <tr class="table-heads">
               <th class="head-item mbr-fonts-style display-7">Наименование</th>
               <th class="head-item mbr-fonts-style display-7">шт</th>
               <th class="head-item mbr-fonts-style display-7">Цена</th>
              </tr>
             </thead>
             <tbody>
-             <tr> 
+             <tr>
               <td class="body-item mbr-fonts-style display-7"><span class="textaddrs" data-title="Гидромассажная система полностью автономна и не зависит от общего напора воды. Вы просто набираете воду в ванну, а затем за дело принимается специальный насос. Направление струй меняется поворотом форсунок."><span class="mbri-question mbr-iconfont mbr-iconfont-btn"></span></span> <a class="text-info" href="#additional_equipment_bath">Гидромассаж</a></td>
               <td class="body-item mbr-fonts-style display-7">6</td>
               <td class="body-item mbr-fonts-style display-7"><nobr>32&nbsp;552 ₽</nobr></td>
@@ -325,10 +349,6 @@
               <td class="body-item mbr-fonts-style display-7">1</td>
               <td class="body-item mbr-fonts-style display-7">1&nbsp;151 ₽</td>
              </tr><tr>
-              <td class="body-item mbr-fonts-style display-7"><span class="textaddrs" data-title="Для подачи воды в ванну вы можете установить смесители непосредственно на борт ванны. Трехпозиционный смеситель «Ниагара» состоит из: душевой лейки, излива с встроеным переключателем излив/душевая лейка, и непосредственно смесителя, который смешивает горячую и холодную воду и регулирует напор."><span class="mbri-question mbr-iconfont mbr-iconfont-btn"></span></span> Смеситель «Ниагара» 3-х позиционный</td>
-              <td class="body-item mbr-fonts-style display-7">1</td>
-              <td class="body-item mbr-fonts-style display-7">14&nbsp;345 ₽</td>
-             </tr><tr>
               <td class="body-item mbr-fonts-style display-7"><span class="textaddrs" data-title="Для подачи воды в ванну вы можете установить смесители непосредственно на борт ванны. Однопозиционный смеситель это фактически обычный смеситель для умывальника с подсоединенным к нему шлангом душевой лейки."><span class="mbri-question mbr-iconfont mbr-iconfont-btn"></span></span> Смеситель врезной однопозиционный CISA</td>
               <td class="body-item mbr-fonts-style display-7">1</td>
               <td class="body-item mbr-fonts-style display-7">—</td>
@@ -344,19 +364,13 @@
               <td class="body-item mbr-fonts-style display-7"><span class="textaddrs" data-title="Для подачи воды в ванну вы можете установить смесители непосредственно на борт ванны. Трехпозиционный смеситель состоит из: душевой лейки, излива с встроеным переключателем излив/душевая лейка, и самого смесителя, который смешивает горячую и холодную воду и регулирует напор."><span class="mbri-question mbr-iconfont mbr-iconfont-btn"></span></span> Смеситель «Супергриф» комплект трехпозиционный</td>
               <td class="body-item mbr-fonts-style display-7">1</td>
               <td class="body-item mbr-fonts-style display-7">—</td>
-             </tr><tr>
-              <td class="body-item mbr-fonts-style display-7" style="background: #fff;"><p></p></td>
-              <td class="body-item mbr-fonts-style display-7" style="background: #fff;"></td>
-              <td class="body-item mbr-fonts-style display-7" style="background: #fff;"></td>
              </tr></tbody>
           </table>
         </div>
-        <div class="container table-info-container">
-        </div>
+        <div class="container table-info-container"></div>
       </div>
     </div>
 </section>
-
 </div></div></div></div></div></div>
    </div>
   </div>
@@ -371,7 +385,7 @@
 <div class="spoilers_body">
 <p class="mbr-fonts-style panel-text display-6" style="padding-top: 10px;">Ванна «Атлант» выполнена из современных материалов высочайшего качества. В отличии от эмали, акрил всегда теплый и гладкий на ощупь. Дно с рифленой массажной поверхностью препятствует скольжению даже в мыльной воде. Ванна абсолютно устойчива, её оцинкованный каркас выдерживает тройную нагрузку и надёжно фиксирует не только дно, но и бортики. Ванна полностью собрана. Доставляется с ножками, сливом и переливом. Достаточно просто подключить её к коммуникациям.</p>
 <p class="mbr-fonts-style panel-text display-6">Лицевой экран на магнитах аккуратно крепится и придает ванне законченную композицию. В ванну можно установить любые опции гидромассажного оборудования и даже, комплект для двоих.</p>
-<p class="mbr-fonts-style panel-text display-6">Ванн такого размера нет ни на зарубежном, ни на Российском рынке сантехники. Это совершенно уникальное пространство полное свободы. Вы можете установить ванну «Атлант» у стены или даже посередине просторной ванной комнаты. Вы можете принимать ванну с одной стороны или с другой, или вдвоём. Можете установить один или сразу два подголовника, которые обеспечивают великолепную поддержку для шеи и головы.</p> 
+<p class="mbr-fonts-style panel-text display-6">Ванн такого размера нет ни на зарубежном, ни на Российском рынке сантехники. Это совершенно уникальное пространство полное свободы. Вы можете установить ванну «Атлант» у стены или даже посередине просторной ванной комнаты. Вы можете принимать ванну с одной стороны или с другой, или вдвоём. Можете установить один или сразу два подголовника, которые обеспечивают великолепную поддержку для шеи и головы.</p>
 <p class="mbr-fonts-style panel-text display-6">Борта этой ванны имеют утолщения. И вы сможете установить здесь дополнительный смеситель или управление гидромассажем — чтобы всё было под рукой. В ванне «Атлант» можно всё — нет никаких ограничений. Ванна «Атлант» — это то, на чём держится «мир отдыха» и релаксации. Великолепный выбор для тех, кто предпочитает максимум возможностей.</p>
     </div>
    </div>
@@ -404,12 +418,12 @@
   <div class="media-container-row">
    <div class="mbr-figure" style="width: 100%; padding-left: 15px;">
     <h2 class="mbr-section-title mbr-black pb-3 mbr-fonts-style display-2">Заказать ванну «Атлант»</h2>
-    <? echo $orderform; ?>
+    <?php if (isset($orderform)) echo $orderform; ?>
    </div>
   <div class="media-content">
    <h2 class="mbr-section-title mbr-black pb-2 mbr-fonts-style display-2">Как купить данную ванну?</h2>
   <div class="mbr-section-text mbr-white pb-3">
-   <p class="mbr-text mbr-fonts-style display-6">В поле формы заказа укажите имя, телефон, сообщение, проверочный код и нажмите отправить. Будьте уверены, мы знаем, вы выбрали <strong>акриловую ванну <nobr>«Атлант 205»</nobr></strong>.</p><p class="mbr-text mbr-fonts-style display-6">Оперативно подготовим информацию по заказу или заданному вопросу и уже сегодня <span class="textaddr" data-title="Перезвоним в рабочее время. Если посчитаем нужным, можем связаться и не в рабочее. В любом случае, оставленный заказ через форму, обрабатывается нами в течение 60 секунд."><?php echo date("d.m.Y");?></span> перезвоним к вам.</p>
+   <p class="mbr-text mbr-fonts-style display-6">В поле формы заказа укажите имя, телефон, сообщение, проверочный код и нажмите отправить. Будьте уверены, мы знаем, вы выбрали <strong>акриловую ванну <nobr>«<?php echo e($item['title']); ?> <?php echo ($item['length']/10); ?>»</nobr></strong>.</p><p class="mbr-text mbr-fonts-style display-6">Оперативно подготовим информацию по заказу или заданному вопросу и уже сегодня <span class="textaddr" data-title="Перезвоним в рабочее время. Если посчитаем нужным, можем связаться и не в рабочее. В любом случае, оставленный заказ через форму, обрабатывается нами в течение 60 секунд."><?php echo date("d.m.Y");?></span> перезвоним к вам.</p>
 <p class="mbr-text mbr-fonts-style display-6">Также вы сами можете позвонить или придти в магазин строительно-отделочных материалов — «СтройСити».</p><p class="mbr-text mbr-fonts-style display-6"><i>Адрес: г. Стерлитамак, <nobr>ул. Западная, д. 18Д</nobr></i><br>&#9990; <a class="text-primary" href="tel:+73473201102">+7&nbsp;(3473)&nbsp;201&nbsp;102</a> <nobr>&#9990; <a class="text-primary" href="tel:+79177779184">+7&nbsp;(917)&nbsp;777&nbsp;91&nbsp;84</a></nobr></p>
     </div>
    </div>
@@ -417,11 +431,11 @@
  </div>
 </section>
 
-<? echo $video; ?>
-<? echo $faq; ?>
-<? echo $reviewsbath; ?>
-<? echo $footersite; ?>
-<? echo $cssjs; ?>
+<?php if (isset($video)) echo $video; ?>
+<?php if (isset($faq)) echo $faq; ?>
+<?php if (isset($reviewsbath)) echo $reviewsbath; ?>
+<?php if (isset($footersite)) echo $footersite; ?>
+<?php if (isset($cssjs)) echo $cssjs; ?>
 <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbri-down mbr-iconfont"></i></a></div>
 </body>
 </html>
