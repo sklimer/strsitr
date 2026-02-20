@@ -1,0 +1,392 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <title>Ванна акриловая «Стандарт 140» размер 1400×700×580 мм, купить в Стерлитамаке</title>
+  <meta name="description" content="В магазине «СтройСити» в Стерлитамаке продается прямоугольная акриловая ванна «Стандарт 140» длиной 140 см, от производителя «Тритон», Россия. Гарантия на ванну 10 лет.">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2b58cc">
+  <link type="image/x-icon" rel="shortcut icon" href="/favicon.ico">
+  <link type="text/css" rel="stylesheet" href="/assets/css/additional.css">
+</head>
+<body>
+<div style="margin-top: -21px;"><?php include "function-vanna-bez-oborudovaniya.php";?></div>
+<? echo $navigation; ?>
+<section class="header1 head1 mbr-parallax-background" id="header1-m" style="background-image: url(../../../assets/images/vanna/bg-vanna-akrilovaya-standart-140.jpg);">
+ <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(37, 46, 127);">
+  </div>
+   <div class="container">
+    <div class="row justify-content-md-center">
+     <div class="mbr-white col-md-12">
+      <h1 class="mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style display-1">Ванна «Стандарт 140»<br>акриловая прямоугольная</h1>
+      <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-2">Купить ванну <img src="/assets/images/vanna/triton.png" alt="«ТРИТОН», зарегистрированная торговая марка" style="margin-top: -13px; -webkit-user-select: none;"> Российского производителя</h3>
+      <p class="mbr-text align-center pb-3 mbr-fonts-style display-9">В магазине «СтройСити» в Стерлитамаке предлагаем<br>купить акриловую ванну «Стандарт 140» длиной 140 см</p>
+     <div class="mbr-section-btn align-center">
+      <a class="btn btn-md btn-primary display-4" href="#price"><span class="mbri-arrow-down mbr-iconfont mbr-iconfont-btn"></span>Смотрим</a>
+      <a class="btn btn-md btn-white-outline display-4" href="#buy"><span class="mbri-target mbr-iconfont mbr-iconfont-btn"></span>Заказываем</a>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+<section class="product1" id="price">
+ <div class="container">
+ <p class="display-7" style="padding-left: 15px;" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+	 <span itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a class="text-black" href="/" itemprop="item">
+		<span itemprop="name">Главная</span>
+		<meta itemprop="position" content="4">
+	</a>
+	</span> / 
+	 <span itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a class="text-black" href="/catalog/" itemprop="item">
+		<span itemprop="name">Каталог</span>
+		<meta itemprop="position" content="4">
+	</a>
+	</span> / 
+	 <span itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a class="text-black" href="/vanny-akrilovye/#catalog" itemprop="item">
+		<span itemprop="name">Ванны акриловые</span>
+		<meta itemprop="position" content="4">
+	</a>
+	</span> / 
+	 Ванна акриловая «Стандарт 140» 1400×700×580
+ </p>
+  <div class="media-container-row">
+   <div class="col-12 col-md-12">
+    <div class="media-container-row">
+     <div class="mbr-figure" style="width: 100%; padding-top: 30px;">
+<h2 class="mbr-section-title mbr-black pb-0 mbr-fonts-style display-2">Ванна акриловая «Стандарт 140»</h2>
+<div class="code">
+<p class="display-8"><span>Артикул: 33037</span> <span>Страна: Россия </span> <span>Производитель: 
+		<a class="text-black" href="/manufacturers/triton" target="_blank">
+		Тритон<sup>&#174;</sup></a></span> <span>Гарантия: 10 лет</span>
+<br><span><a class="text-info" href="#komplekt-postavki">Комплект</a></span> <span><a class="text-info" href="#foto-gallery">Фото</a></span> <span><a class="text-info" href="#video">Видео</a></span> <span><a class="text-info" href="#faq">Вопросы</a></span> <span><a class="text-info" href="#reviews">Отзывы</a></span></p>
+</div>
+<div class="coupon"><span>в наличии</span></div><img src="/assets/images/vanna/vanna-standart-140.jpg" alt="Ванна акриловая «Стандарт 140» производство Россия, производитель «Тритон» купить в Стерлитамаке"  style="-webkit-user-select: none;">
+<div class="mbr-section-btn align-center">
+<a class="btn btn-sm btn-success display-6" href="#komplekt-postavki"><span class="mbri-target mbr-iconfont mbr-iconfont-btn"></span> Цена 11 489 &#8381;</a>
+<a class="btn btn-sm btn-secondary display-6" href="#buy"><span class="mbri-idea mbr-iconfont mbr-iconfont-btn"></span> Заказать</a>
+<p class="display-8"><sup>&#x2217;</sup>Стоимость ванны указана за базовый <a class="text-info" href="#komplekt-postavki">комплект</a> поставки.</p>
+</div></div>
+  <div class="media-content">
+
+<section class="section-table table1" style="padding-top: 30px;">
+  <div class="container container-table">
+      <div class="table-wrapper">
+        <div class="container scroll">
+<h2 class="mbr-section-title mbr-black pb-0 mbr-fonts-style display-2">Размер ванны 1400×700×570</h2>
+          <table class="table">
+            <thead>
+             <tr class="table-heads">
+              <th class="head-item mbr-fonts-style display-7">Общие характеристики:</th>
+              <th class="head-item mbr-fonts-style display-7">&ensp;</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr> 
+              <td class="body-item mbr-fonts-style display-7">Длина</td>
+              <td class="body-item mbr-fonts-style display-7"><a class="text-primary" href="/vanny-akrilovye/140#catalog">1400 мм</a></td>
+             </tr><tr>
+              <td class="body-item mbr-fonts-style display-7">Ширина</td>
+              <td class="body-item mbr-fonts-style display-7">700 мм</td>             
+             </tr><tr>
+              <td class="body-item mbr-fonts-style display-7">Высота <span class="textaddrs" data-title="Высота регулируется ножками."><span class="mbri-question mbr-iconfont mbr-iconfont-btn"></span></span></td>
+              <td class="body-item mbr-fonts-style display-7">570 мм</td>
+             </tr><tr>
+              <td class="body-item mbr-fonts-style display-7">Глубина</td>
+              <td class="body-item mbr-fonts-style display-7">360 мм</td>
+             </tr><tr>
+              <td class="body-item mbr-fonts-style display-7">Объем</td>
+              <td class="body-item mbr-fonts-style display-7">170 л</td>
+             </tr><tr>
+              <td class="body-item mbr-fonts-style display-7">Высота экрана</td>
+              <td class="body-item mbr-fonts-style display-7">510 мм</td>
+             </tr><tr>
+              <td class="body-item mbr-fonts-style display-7">Тип ванны</td>
+              <td class="body-item mbr-fonts-style display-7"><a href="https://str.city/vanny-akrilovye/pryamougolnye">Прямоугольный</a> / эконом</td>
+             </tr><tr>
+              <td class="body-item mbr-fonts-style display-7">Крепление экрана</td>
+              <td class="body-item mbr-fonts-style display-7">На саморез<br>с декоративной заглушкой</td>
+             </tr></tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+        </div>
+      </div>
+    </div>
+</section>
+</div>
+</div><p class="mbr-fonts-style panel-text display-6" style="padding-top: 30px;">В магазине «СтройСити» в Стерлитамаке, продается <strong>акриловая ванна «Стандарт 140»</strong> длиной 140 см, от производителя «Тритон», страна Россия. Гарантия на ванну 10 лет. У нас представлено большое разнообразие модельного ряда — классические, элегантные, оригинальные, стандартные. В магазине строительно-отделочных материалов предложены ванны разных размеров и форм — ассиметричные, угловые, квадратные, прямоугольные. Из всего разнообразия акриловых ванн, предлагаем доступные цены для широкого круга покупателей, достойный и широкий выбор модельного ряда.</p>
+    <p class="mbr-fonts-style panel-text display-8"><i>Магазин «СтройСити» — официальный дилер «Тритон» на Юге Башкирии в городе Стерлитамак.</i> Уверены, теперь вы знаете где именно <a class="text-info" href="#buy"><strong>купить акриловую ванну</strong></a> в Стерлитамаке!</p>
+   </div>
+  </div>
+ </div>
+</section>
+<section class="mbr-gallery mbr-slider-carousel photo-review-1" id="foto-gallery">
+    <div class="container"><h2 class="mbr-section-title mbr-black pb-0 mbr-fonts-style display-2" style="padding-left: 15px;">Фотографии ванны «Стандарт 140»</h2>
+        <div><!-- Filter --><!-- Gallery --><div class="mbr-gallery-row">
+          <div class="mbr-gallery-layout-default">
+           <div>
+            <div>
+             <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false">
+             <div href="#gallery1" data-slide-to="0" data-toggle="modal"><img src="/assets/images/vanna/vanna-standart-140-1-min.jpg" alt="Ванна акриловая «Стандарт 140» прямоугольная вид сбоку" style="-webkit-user-select: none;">
+             <span class="icon-focus"></span>
+             <span class="mbr-gallery-title mbr-fonts-style display-7">Вид сбоку</span>
+            </div>
+           </div>
+            <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false">
+             <div href="#gallery1" data-slide-to="1" data-toggle="modal">
+             <img src="/assets/images/vanna/vanna-standart-140-2-min.jpg" alt="Ванна акриловая «Стандарт 140» прямоугольная вид сверху" style="-webkit-user-select: none;">
+             <span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Вид сверху</span>
+            </div>
+           </div>
+            <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false">
+             <div href="#gallery1" data-slide-to="2" data-toggle="modal">
+             <img src="/assets/images/vanna/vanna-standart-140-3-min.jpg" alt="Ванна акриловая «Стандарт 140» прямоугольная вид ванны в интерьере" style="-webkit-user-select: none;">
+             <span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Ванна в интерьере</span>
+             </div>
+            </div>
+             <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false">
+              <div href="#gallery1" data-slide-to="3" data-toggle="modal">
+              <img src="/assets/images/vanna/vanna-standart-140-4-min.jpg" alt="Ванна акриловая «Стандарт 140» прямоугольная с видом девушки лежащей в ванне" style="-webkit-user-select: none;">
+              <span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Ванна и девушка</span>
+             </div>
+            </div>
+           </div>
+          </div>
+<div class="clearfix"></div></div></div>
+<!-- Lightbox -->
+          <div data-app-prevent-settings="" class="mbr-slider modal fade carousel slide" tabindex="-1" data-keyboard="true" data-interval="false" id="gallery1"><div class="modal-dialog"><div class="modal-content">
+          <div class="modal-body">
+           <div class="carousel-inner">
+            <div class="carousel-item"><img src="/assets/images/vanna/vanna-standart-140-1-big.jpg" alt="Ванна акриловая «Стандарт 140» вид сбоку" style="-webkit-user-select: none;"></div>
+             <div class="carousel-item"><img src="/assets/images/vanna/vanna-standart-140-2-big.jpg" alt="Ванна акриловая «Стандарт 140» вид сверху" style="-webkit-user-select: none;"></div>
+              <div class="carousel-item"><img src="/assets/images/vanna/vanna-standart-140-3-big.jpg" alt="Ванна акриловая «Стандарт 140» вид ванны в интерьере" style="-webkit-user-select: none;"></div>
+               <div class="carousel-item active"><img src="/assets/images/vanna/vanna-standart-140-4-big.jpg" alt="Ванна акриловая «Стандарт 140» с видом девушки лежащей в ванне" style="-webkit-user-select: none;"></div></div>
+                <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#gallery1">
+                <span class="mbri-left mbr-iconfont" aria-hidden="true"></span>
+                <span class="sr-only">Назад</span></a>
+                <a class="carousel-control carousel-control-next" role="button" data-slide="next" href="#gallery1">
+                <span class="mbri-right mbr-iconfont" aria-hidden="true"></span>
+                <span class="sr-only">Вперед</span></a>
+                <a class="close" href="#" role="button" data-dismiss="modal"><span class="sr-only">Закрыть</span></a>
+               </div>
+ </div></div></div></div></div>
+</section>
+<section class="accord1" id="komplekt-postavki">
+ <div class="container">
+  <div style="background: #f6efd9; border: solid 3px #ffd54f; padding: 35px 10px 18px; border-style: dashed;">
+  <h3 class="mbr-section-title mbr-black pb-0 mbr-fonts-style display-3" style="padding-left: 15px;">Нужна ванна с лицевым экраном?</h3>
+  <p class="display-6" style="padding-left: 15px;"><strong>Цена ванны</strong> указана за базовый комплект поставки — лицевой экран не входит. Чтобы включить лицевой экран, шторки для ванны, каркас, слив-перелив, или <a class="text-primary" href="/smesiteli/">смеситель для ванны</a>, просим ознакомиться с дополнительным оборудованием.</p>
+  </div>
+  <div class="media-container-row pt-3">
+   <div class="accordion-content">
+    <div id="bootstrap-accordion_18" class="panel-group accordionStyles accordion pt-0 mt-0" role="tablist" aria-multiselectable="true" style="width: 96%; padding-left: 15px;">
+     <div class="card">
+      <div class="card-header" role="tab">
+       <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-parent="#bootstrap-accordion_18" data-core="" href="#collapse1_18" aria-expanded="false">
+       <h4 class="mbr-fonts-style display-5">
+       <span class="sign mbr-iconfont mbri-arrow-down inactive"></span> Комплект поставки</h4>
+       </a>
+      </div>
+       <div id="collapse1_18" class="panel-collapse noScroll collapse show" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body p-0">
+<section class="section-table table2" id="table1-16">
+  <div class="container container-table" style="margin-left: -5px;">
+      <div class="table-wrapper">
+        <div class="container scroll">
+          <table class="table">
+            <thead>
+             <tr class="table-heads">
+              <th class="head-item mbr-fonts-style display-7">Наименование</th>
+              <th class="head-item mbr-fonts-style display-7">шт</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr> 
+              <td class="body-item mbr-fonts-style display-7">Акриловая ванна</td>
+              <td class="body-item mbr-fonts-style display-7">1</td>
+             </tr></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+</section>
+<p class="display-6" style="padding-left: 15px;">Данную ванну можно дополнительно укомплектовать лицевым экраном, шторками разного типа, сливом-переливом, укомплектовать ножками для ванны и выбрать подходящий каркас.</p>
+<p class="display-6" style="padding-left: 15px;">Каркасы для ванны «Стандарт» поставляются в двух вариантах: алюминиевый и стальной сварной. Смотрите дополнительную информации в доп. оборудовании.</p>
+      </div>
+     </div>
+    </div> 
+   </div>
+  </div>
+   <div class="mbr-figure" style="width: 100%; padding-left:0rem;">
+
+  <div class="media-container-row pt-0">
+   <div class="accordion-content">
+    <div id="bootstrap-accordion_19" class="panel-group accordionStyles accordion pt-0 mt-0" role="tablist" aria-multiselectable="true" style="width: 96%; padding-left: 15px;">
+     <div class="card">
+      <div class="card-header" role="tab">
+       <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-parent="#bootstrap-accordion_19" data-core="" href="#collapse1_19" aria-expanded="false">
+       <h4 class="mbr-fonts-style display-5">
+       <span class="sign mbr-iconfont mbri-arrow-down inactive"></span> Дополнительное оборудование</h4>
+       </a>
+      </div>
+       <div id="collapse1_19" class="panel-collapse noScroll collapse show" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body p-0">
+<div class="section-table table2" id="table1-16">
+  <div class="container container-table">
+      <div class="table-wrapper">
+        <div class="container scroll">
+          <table class="table">
+            <thead>
+             <tr class="table-heads">
+              <th class="head-item mbr-fonts-style display-7">Наименование</th>
+              <th class="head-item mbr-fonts-style display-7">шт</th>
+              <th class="head-item mbr-fonts-style display-7">Цена</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr> 
+              <td class="body-item mbr-fonts-style display-7">Комплект для сборки</td>
+              <td class="body-item mbr-fonts-style display-7">1</td>
+              <td class="body-item mbr-fonts-style display-7">1&nbsp;350 &#8381;</td>
+             </tr><tr>
+              <td class="body-item mbr-fonts-style display-7"><span class="textaddrs" data-title="Лицевой экран предназначен для закрытия пространства под ванной и придает ванне эстетичный и законченный вид. Лицевой экран легко ставится и легко снимается. Экран крепится на саморезы с декоративной заглушкой."><span class="mbri-question mbr-iconfont mbr-iconfont-btn"></span></span> Экран лицевой (панель)</td>
+              <td class="body-item mbr-fonts-style display-7">1</td>
+              <td class="body-item mbr-fonts-style display-7">2&nbsp;457 &#8381;</td>
+             </tr><tr>
+              <td class="body-item mbr-fonts-style display-7"><span class="textaddrs" data-title="Предлагаем 2 варианта шторки: «купе» и «классик». Шторка на ванну «Купе» состоит из четырех створок. Две центральные створки раздвигаются в разные стороны от центра. Каркас рамы, неподвижных частей и дверок выполнены из окрашенного алюминиевого профиля. Шторка на ванну «Классик» состоит из трех створок. Две створки сдвигаются в сторону третьей неподвижной створки. Каркас рамы, неподвижных частей и дверок выполнены из окрашенного алюминиевого профиля. В шторках «Купе» и «Классик» используются ударопрочные стироловые (пластиковые) стёкла с рисунком «капли». Подшипники скольжения, размещенные в профиле створок, обеспечивают бесшумное скольжение и отсутствие перекосов при движении створок. Высота шторок в обоих случаях составляет 1400 мм."><span class="mbri-question mbr-iconfont mbr-iconfont-btn"></span></span> Шторка на ванну 2-х и 3-х створчатая</td>
+              <td class="body-item mbr-fonts-style display-7">1</td>
+              <td class="body-item mbr-fonts-style display-7">по запросу</td>
+             </tr><tr>
+              <td class="body-item mbr-fonts-style display-7"><span class="textaddrs" data-title="Шторка торцевая для ванны может быть использована вместо 2-х или 3-х створчатой шторки."><span class="mbri-question mbr-iconfont mbr-iconfont-btn"></span></span> Шторка торцевая</td>
+              <td class="body-item mbr-fonts-style display-7">1</td>
+              <td class="body-item mbr-fonts-style display-7">по запросу</td>
+             </tr><tr>
+              <td class="body-item mbr-fonts-style display-7"><span class="textaddrs" data-title="Сифон для ванны полуавтомат (слив‐перелив)."><span class="mbri-question mbr-iconfont mbr-iconfont-btn"></span></span> Слив‐перелив (полуавтомат)</td>
+              <td class="body-item mbr-fonts-style display-7">1</td>
+              <td class="body-item mbr-fonts-style display-7">по запросу</td>
+             </tr><tr>
+              <td class="body-item mbr-fonts-style display-7" colspan="3">Тип установки</td>
+             </tr><tr>
+              <td class="body-item mbr-fonts-style display-7"><span class="textaddrs" data-title="Ножки для ванн серии «Стандарт»"><span class="mbri-question mbr-iconfont mbr-iconfont-btn"></span></span> Ножки под ванну «Стандарт»</td>
+              <td class="body-item mbr-fonts-style display-7">1</td>
+              <td class="body-item mbr-fonts-style display-7">по запросу</td>
+             </tr><tr>
+              <td class="body-item mbr-fonts-style display-7"><span class="textaddrs" data-title="Каркас алюминиевый для ванн серии «Стандарт»"><span class="mbri-question mbr-iconfont mbr-iconfont-btn"></span></span> Каркас алюминиевый разборный</td>
+              <td class="body-item mbr-fonts-style display-7">1</td>
+              <td class="body-item mbr-fonts-style display-7">по запросу</td>
+             </tr><tr>
+              <td class="body-item mbr-fonts-style display-7"><span class="textaddrs" data-title="Каркас стальной сварной для ванн серии «Стандарт»"><span class="mbri-question mbr-iconfont mbr-iconfont-btn"></span></span> Каркас стальной сварной</td>
+              <td class="body-item mbr-fonts-style display-7">1</td>
+              <td class="body-item mbr-fonts-style display-7">по запросу</td>
+             </tr><tr>
+              <td class="body-item mbr-fonts-style display-7" colspan="3">В комплект поставки, мы также предлагаем моющие средства для ванны. Купить эту ванну и моющие средства можно на сайте, путем оставления заказа, или в магазине «СтройСити» оффлайн.</td>
+             </tr></tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+        </div>
+      </div>
+    </div>
+</div>
+
+</div></div></div></div></div></div>
+   </div>
+  </div>
+ </div>
+</section>
+<section class="cont-1" id="content1-o">
+    <div class="container">
+        <div class="media-container-row">
+            <div class="mbr-text col-12 col-md-12 mbr-fonts-style display-6">Если вы выбираете <strong>акриловую ванну</strong>, и в ваши планы не входит устанавливать гидромассажное оборудование, обратите внимание на серию стандартных ванн фирмы «Тритон». Они максимально облегчены, в каркасе нет ни одной лишней детали. Вам не придется переплачивать за конструкции, необходимые только для гидромассажа. А это значит, вы получите качественную, современную акриловую ванну, по вполне приемлемой цене. <a href="" class="spoilers_links" style="border-bottom: 1px dotted #4d90fe;">Показать ещё</a>
+<div class="spoilers_body">
+<p class="mbr-fonts-style panel-text display-6" style="padding-top: 10px;">Даже стандартная акриловая ванна «Тритон», сильно отличается от чугунных или стальных ванн, это совершенно другой уровень комфорта. Сравните, вода в акриловой ванне остывает в три раза медленнее, чем в стальной ванне. Такая ванна всегда будет теплой и гладкой на ощупь, даже когда в ней нет воды. Вода из крана не стучит по бортикам и не создает никакого шума. Вы можете спокойно слушать не громкую музыку.</p>
+<div class="mbr-figure" style="width: 100%;">
+<img src="/assets/images/vanna/vanna-standart-140-original.jpg" alt="Ванна «Стандарт» в интерьере ванной комнаты"  style="-webkit-user-select: none;">
+<div class="img-caption">
+<p class="mbr-fonts-style panel-text display-6">Ванна «Стандарт» в интерьере ванной комнаты</p>
+</div>
+</div>
+<p class="display-6" style="padding-top: 10px;">Дополнительно вы можете приобрести стильный лицевой экран, или обычный раздвижной экран, который обойдется вам еще дешевле.</p>
+<div class="mbr-figure" style="width: 100%;">
+<img src="/assets/images/vanna/litcevoy-ekran.jpg" alt="Лицевой экран для ванны"  style="-webkit-user-select: none;">
+<div class="img-caption">
+<p class="mbr-fonts-style panel-text display-6">Лицевой экран для ванны</p>
+</div>
+</div>
+<p class="display-6" style="padding-top: 10px;">Ванна может комплектоваться тремя видами установочных каркасов. Самым простым, сборным оцинкованным комплектом на ножках, сборным алюминиевым каркасом, или стальным окрашенным сварным каркасом. Все просто, функционально, эргономично.</p>
+<div class="mbr-figure" style="width: 100%;">
+<img src="/assets/images/vanna/sbornyj-ocinkovannyj-komplekt-na-nozhkah.jpg" alt="Сборный оцинкованный комплект на ножках"  style="-webkit-user-select: none;">
+<div class="img-caption">
+<p class="mbr-fonts-style panel-text display-6">Сборный оцинкованный комплект на ножках</p>
+</div>
+</div>
+<div class="mbr-figure" style="width: 100%;">
+<img src="/assets/images/vanna/sbornyj-aljuminievyj-karkas.jpg" alt="Сборный алюминиевый каркас"  style="-webkit-user-select: none;">
+<div class="img-caption">
+<p class="mbr-fonts-style panel-text display-6">Сборный алюминиевый каркас</p>
+</div>
+</div>
+<div class="mbr-figure" style="width: 100%;">
+<img src="/assets/images/vanna/stalnoj-okrashennyj-svarnoj-karkas.jpg" alt="Стальной окрашенный сварной каркас"  style="-webkit-user-select: none;">
+<div class="img-caption">
+<p class="mbr-fonts-style panel-text display-6">Стальной окрашенный сварной каркас</p>
+</div>
+</div>
+<p class="display-6" style="padding-top: 10px;">Угол наклона спинки продуман так, чтобы мышцы спины и поясницы не испытывали ни малейшего напряжения.</p>
+<p class="display-6">Объем ванны свыше 200 литров, позволяет погрузиться в мир, где нет никаких проблем и забот. Без лишнего шума в море удовольствия вас ждет только ощущение исключительной гладкости, невесомости и тепла.</p>
+<p class="display-6">Акриловые ванны «Стандарт 140», «<a class="text-primary" href="/vanny-akrilovye/vanna-standart-150">Стандарт 150</a>», «<a class="text-primary" href="/vanny-akrilovye/vanna-standart-160">Стандарт 160</a>» и «<a class="text-primary" href="/vanny-akrilovye/vanna-standart-170">Стандарт 170</a>» — это современная классика для ванной комнаты. Выбирайте ту длину ванны, которая подходит вам больше всего.</p>
+
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+<section class="video-cont mbr-fullscreen mbr-parallax-background" id="header13-12" style="background-image: url(../../../assets/images/vanna/bg-vanna-akrilovaya-standart-140-video.jpg);">
+ <div class="container">
+  <div class="mbr-media show-modal align-center pb-4 mb-4 pt-5" data-modal=".modalWindow">
+   <span class="mbri-play mbr-icofont" ></span>
+  </div>
+ </div>
+<div>
+<div class="modalWindow" style="display: none;">
+ <div class="modalWindow-container">
+  <div class="modalWindow-video-container">
+   <div class="modalWindow-video">
+    <iframe width="100%" height="100%" frameborder="0" allowfullscreen="1" data-src="https://www.youtube.com/watch?v=AHndZlWz1ck"></iframe>
+    </div>
+     <a class="close" role="button" data-dismiss="modal"><span aria-hidden="true" class="mbri-close mbr-iconfont closeModal"></span><span class="sr-only">Закрыть</span></a>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+<section class="order-form" id="buy">
+ <div class="container">
+  <div class="media-container-row">
+   <div class="mbr-figure" style="width: 100%; padding-left: 15px;">
+    <h2 class="mbr-section-title mbr-black pb-3 mbr-fonts-style display-2">Заказать ванну «Стандарт 140»</h2>
+    <? echo $orderform; ?>
+   </div>
+  <div class="media-content">
+   <h2 class="mbr-section-title mbr-black pb-2 mbr-fonts-style display-2">Как купить данную ванну?</h2>
+  <div class="mbr-section-text mbr-white pb-3">
+   <p class="mbr-text mbr-fonts-style display-6">В поле формы заказа укажите имя, телефон, сообщение, проверочный код и нажмите отправить. Будьте уверены, мы знаем, ваш выбор — <strong>акриловая ванна «Стандарт 140»</strong>.</p><p class="mbr-text mbr-fonts-style display-6">Оперативно подготовим информацию по заказу или заданному вопросу и уже сегодня <span class="textaddr" data-title="Перезвоним в рабочее время. Если посчитаем нужным, можем связаться и не в рабочее. В любом случае, оставленный заказ через форму, обрабатывается нами в течение 60 секунд."><?php echo date("d.m.Y");?></span> перезвоним к вам.</p>
+<p class="mbr-text mbr-fonts-style display-6">Также вы сами можете позвонить или придти в магазин строительно-отделочных материалов — «СтройСити».</p><p class="mbr-text mbr-fonts-style display-6"><i>Адрес: г. Стерлитамак, ул. Западная, д. 18Д</i><br>&#9990; <a class="text-primary" href="tel:+73473201102" rel="nofollow">+7&nbsp;(3473)&nbsp;201&nbsp;102</a> &#9990; <a class="text-primary" href="tel:+79177779184">+7&nbsp;(917)&nbsp;777&nbsp;91&nbsp;84</a></p>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+<? echo $video; ?>
+<? echo $faq; ?>
+<? echo $reviewsbath; ?>
+<? echo $footersite; ?>
+<? echo $cssjs; ?>
+
+<div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbri-down mbr-iconfont"></i></a></div>
+</body>
+</html>
